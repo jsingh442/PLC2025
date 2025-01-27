@@ -15,6 +15,9 @@ r5 = [1,3,4,1]
 r6 = [1..5]
 
 inc n = n + 1
+onc x = x + 2
+f = map onc [5,9,1]
+
 
 r7 = map inc [1..3]
 r8 = map (diff 2) [1..3]

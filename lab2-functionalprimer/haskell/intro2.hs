@@ -20,6 +20,7 @@ prg1' = sequence_ [print "hello ", print name]
 
 -- one imperative program passing value to another:
 prg2 = do
+  putStrLn("EnterSomethingmaet")
   line <- getLine
   putStrLn ("you typed: " ++ line)
 
@@ -37,6 +38,6 @@ toString value = show value
 -- string concatenation:
 greet1 = "hello " ++ name ++ (toString 123)
 -- the same, but with the operator as a function (like Lisp):
-greet2 = (++) "hello " name
+greet2 = (++) "hello " name 
 -- concatenating more than 2 strings:
 greet3 = concat ["hello ", name, toString 123]
